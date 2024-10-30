@@ -1,0 +1,145 @@
+[gd_scene load_steps=3 format=3 uid="uid://bl0krrp8ivfr4"]
+
+[ext_resource type="Script" path="res://main_scene.gd" id="1_yus2o"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vir5j"]
+load_path = "res://.godot/imported/Вставленное изображение.png-a29abf24d69d7e34238faea86e2eb62f.ctex"
+
+[node name="MainScene" type="Node2D"]
+script = ExtResource("1_yus2o")
+
+[node name="ВставленноеИзображение" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(580.5, 323.5)
+scale = Vector2(2.24023, 1.26758)
+texture = SubResource("CompressedTexture2D_vir5j")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 85.0
+offset_top = 408.0
+offset_right = 150.0
+offset_bottom = 458.0
+scale = Vector2(1.8191, 1.19039)
+theme_override_font_sizes/font_size = 17
+text = "<"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 269.0
+offset_top = 410.0
+offset_right = 334.0
+offset_bottom = 460.0
+scale = Vector2(1.8191, 1.19039)
+theme_override_font_sizes/font_size = 17
+text = ">"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 269.0
+offset_top = 288.0
+offset_right = 334.0
+offset_bottom = 344.0
+rotation = 1.5708
+scale = Vector2(1.8191, 1.19039)
+theme_override_font_sizes/font_size = 17
+text = "<"
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 204.0
+offset_top = 589.0
+offset_right = 269.0
+offset_bottom = 640.0
+rotation = -1.5708
+scale = Vector2(1.8191, 1.19039)
+theme_override_font_sizes/font_size = 17
+text = "<"
+
+[node name="Button5" type="Button" parent="."]
+offset_left = 530.0
+offset_top = 87.0
+offset_right = 662.0
+offset_bottom = 135.0
+text = "Connect"
+
+[node name="Button6" type="Button" parent="."]
+offset_left = 954.0
+offset_top = 382.0
+offset_right = 1034.0
+offset_bottom = 452.0
+text = "A"
+
+[node name="Button7" type="Button" parent="."]
+offset_left = 786.0
+offset_top = 382.0
+offset_right = 866.0
+offset_bottom = 452.0
+text = "Y"
+
+[node name="Button8" type="Button" parent="."]
+offset_left = 870.0
+offset_top = 470.0
+offset_right = 950.0
+offset_bottom = 540.0
+text = "B"
+
+[node name="Button9" type="Button" parent="."]
+offset_left = 870.0
+offset_top = 294.0
+offset_right = 950.0
+offset_bottom = 364.0
+text = "X"
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
+
+[node name="Button10" type="Button" parent="."]
+offset_left = 57.0
+offset_top = 78.0
+offset_right = 157.0
+offset_bottom = 120.0
+scale = Vector2(1.70205, 1.62702)
+text = "LT"
+
+[node name="Button11" type="Button" parent="."]
+offset_left = 921.0
+offset_top = 78.0
+offset_right = 1021.0
+offset_bottom = 120.0
+scale = Vector2(1.70205, 1.62702)
+text = "RT"
+
+[node name="Button12" type="Button" parent="."]
+offset_left = 428.0
+offset_top = 252.0
+offset_right = 507.0
+offset_bottom = 287.0
+scale = Vector2(1.58542, 1.47623)
+text = "SELECT"
+
+[node name="Button13" type="Button" parent="."]
+offset_left = 604.0
+offset_top = 252.0
+offset_right = 683.0
+offset_bottom = 287.0
+scale = Vector2(1.58542, 1.47623)
+text = "START"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+offset_left = 399.0
+offset_top = 16.0
+offset_right = 802.0
+offset_bottom = 66.0
+theme_override_font_sizes/font_size = 30
+placeholder_text = "Address"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="Button6" to="." method="_on_button_6_pressed"]
+[connection signal="pressed" from="Button7" to="." method="_on_button_7_pressed"]
+[connection signal="pressed" from="Button8" to="." method="_on_button_8_pressed"]
+[connection signal="pressed" from="Button9" to="." method="_on_button_9_pressed"]
+[connection signal="pressed" from="Button10" to="." method="_on_button_10_pressed"]
+[connection signal="pressed" from="Button11" to="." method="_on_button_11_pressed"]
+[connection signal="pressed" from="Button12" to="." method="_on_button_12_pressed"]
+[connection signal="pressed" from="Button13" to="." method="_on_button_13_pressed"]
